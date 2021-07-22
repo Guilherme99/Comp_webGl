@@ -1,0 +1,59 @@
+else if(37 === event.keyCode){
+			ANGLE += 15.0;
+			var radian = (Math.PI * (ANGLE)) / 180.0;
+            var cosB = Math.cos(radian);
+            var sinB = Math.sin(radian);
+            var rotationMatrix = new Float32Array([
+                cosB, +sinB, 0, 0,
+                -sinB, cosB, 0, 0,
+                0, 0, 1, 0,
+                0, 0, 0, 1,
+            ]);
+
+            mov_matrix = rotationMatrix;
+		 }
+		 else if(39 === event.keyCode){
+            this.event.preventDefault();
+			ANGLE -= 15.0;
+            var radian = (Math.PI * (ANGLE)) / 180.0;
+            var cosB = Math.cos(radian);
+            var sinB = Math.sin(radian);
+            var rotationMatrix = new Float32Array([
+                cosB, +sinB, 0, 0,
+                -sinB, cosB, 0, 0,
+                0, 0, 1, 0,
+                0, 0, 0, 1,
+            ]);
+    
+            mov_matrix = rotationMatrix;
+		 }
+
+
+         var ANGLE = 0.0;
+	function rotatePlus() {
+		var radian = (Math.PI * (-ANGLE)) / 180.0;
+		var cosB = Math.cos(radian);
+		var sinB = Math.sin(radian);
+		var rotationMatrix = new Float32Array([
+			cosB, +sinB, 0, 0,
+			-sinB, cosB, 0, 0,
+			0, 0, 1, 0,
+			0, 0, 0, 1,
+		]);
+
+		mov_matrix = rotationMatrix;
+	}
+	function rotateMine() {
+		var radian = (Math.PI * (ANGLE)) / 180.0;
+		var cosB = Math.cos(radian);
+		var sinB = Math.sin(radian);
+		var rotationMatrix = new Float32Array([
+			cosB, +sinB, 0, 0,
+			-sinB, cosB, 0, 0,
+			0, 0, 1, 0,
+			0, 0, 0, 1,
+		]);
+
+		mov_matrix = rotationMatrix;
+	}
+	

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Trabalho</title>
+
+    <script src="square.js" defer></script>
+    <script src="triangle.js" defer></script>
+    <script src="circle.js" defer></script>
+</head>
+<body>
+
+  <div class="conteudo">
+    
+    <header>
+      <h2 id="comando"> <img src="./images/olho.png" alt="view"> COMANDOS</h2>
+      <div class="comandos" id="divOn_Off">
+        <div class="infor">
+          <h3>Zoom</h3>
+        </div>
+        <div class="infor">
+          <h3>Rotação</h3>
+        </div>
+        <div class="infor">
+          <h3>Translação</h3>
+        </div>
+        <div class="infor">
+          <h3>Out : CTRL -</h3>
+        </div>
+        <div class="infor">
+          <h3>Rotação em X - Setas Left, Right.</h3>
+        </div>
+        <div class="infor">
+          <h3>Translação Horizontal: Teclas "A" e "D"</h3>
+        </div>
+        <div class="infor">
+          <h3>In : CTRL +</h3>
+        </div>
+        <div class="infor">
+          <h3>Rotação em Y - Setas Up, Down.</h3>
+        </div>
+        <div class="infor">
+          <h3>Translação Vertical: Teclas "W" e "S"</h3>
+        </div>
+        <div class="infor circle">
+          <h3>Tecla Asterísco (*) : Rotações auto <br> Exceto Círculo</h3>
+        </div>
+      </div>
+      
+    </header>
+    <div class="content">
+      <div class="geometric">
+        <div class="element" id="1"></div>
+          <canvas class="canvas" width = "300" height = "300" id = "glcanvas"></canvas>
+          <div class="footer">
+            <h2>Quadrado</h2>
+          </div>
+        </div>
+        <div class="geometric">
+          <div class="element" id="2"></div>
+          <canvas class="canvas" width = "300" height = "300" id = "glcanvas2"></canvas>
+          <div class="footer">
+            <h2>Triângulo</h2>
+          </div>
+        </div> 
+        <div class="geometric">
+          <div class="element" id="3"></div>
+          <canvas class="canvas" id="glcanvas3" width="300" height="300"></canvas>
+          <div class="footer">
+              <h2>Círculo</h2>
+          </div>
+        </div>
+    </div>
+  </div>
+</body>
+
+<script>
+    window.addEventListener('click', function(e){   
+		if (document.getElementById('comando').contains(e.target)){
+		  this.document.getElementById("divOn_Off").classList.remove("comandos");
+		  this.document.getElementById("divOn_Off").classList.add("comandosOn");
+		}
+     else{
+        // Clicked outside the box
+        this.document.getElementById("divOn_Off").classList.remove("comandosOn");
+		  this.document.getElementById("divOn_Off").classList.add("comandos");
+      }
+    });
+    
+</script>
+
+</html>
