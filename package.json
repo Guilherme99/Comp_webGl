@@ -1,0 +1,22 @@
+{
+  "name": "comp_webgl",
+  "version": "1.0.0",
+  "description": "",
+  "main": "circle.js",
+  "scripts": {
+    "start": "live-server public --port=3000"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Guilherme99/Comp_webGl.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Guilherme99/Comp_webGl/issues"
+  },
+  "homepage": "https://github.com/Guilherme99/Comp_webGl#readme",
+  "devDependencies": {
+    "live-server": "^1.2.1"
+  }
+}
