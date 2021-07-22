@@ -54,13 +54,13 @@ function main( )
 		{
 			translationX -= jump;
 		}
-		else if ( 187 === event.keyCode )
+		else if ( 187 === event.keyCode || 107 === event.keyCode  )
 		{
 			event.preventDefault();
 			/* translationZ -= jump; */
 			Sx -= 0.1, Sy -= 0.1, Sz -= 0.1;
 		}
-		else if ( 189 === event.keyCode )
+		else if ( 189 === event.keyCode || 109 === event.keyCode )
 		{
 			event.preventDefault();
 			/* translationZ += jump; */
@@ -77,7 +77,7 @@ function main( )
 		else if(40 === event.keyCode){
 			RotateX(mov_matrix, -30)
 		 }
-		 else if ( 56 === event.keyCode )
+		 else if ( 56 === event.keyCode || 106 === event.keyCode  )
          {
              onFlag = onFlag*-1;
          }
