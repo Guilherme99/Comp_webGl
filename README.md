@@ -41,7 +41,7 @@ Para instalar o projeto, siga estas etapas:
 
 ## ☕ Usando o projeto
 
-Para usar, basta depois de istalar as dependências, rodar:
+Para usar, basta depois de instalar as dependências, rodar:
 
 ```
 npm run start ou yarn start
